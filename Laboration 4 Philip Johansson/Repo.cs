@@ -5,9 +5,9 @@ using System.Text.Json.Serialization;
 
 namespace Laboration_4_Philip_Johansson
 {
-    public class Repo
+    public class Repo // Representerar ett GitHub-repo
     {
-        [JsonPropertyName("name")]
+        [JsonPropertyName("name")] //JsonPropertyName används för att mappa JSON-fältet till egenskapen 
         public string Name { get; set; }
 
         [JsonPropertyName("description")]

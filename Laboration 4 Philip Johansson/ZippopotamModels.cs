@@ -5,9 +5,10 @@ using System.Text.Json.Serialization;
 
 namespace Laboration_4_Philip_Johansson
 {
-    public class ZippopotamResponse
+    // Modeller för Zippopotam API-svar
+    public class ZippopotamResponse 
     {
-        [JsonPropertyName("post code")]
+        [JsonPropertyName("post code")] //JsonPropertyName används för att mappa JSON-fältet till egenskapen
         public string PostCode { get; set; }
         
         [JsonPropertyName("country")]
@@ -20,6 +21,7 @@ namespace Laboration_4_Philip_Johansson
         public List<Place> Places { get; set; }
     }
 
+    // Modell för en plats i Zippopotam API-svar
     public class Place
     {
         [JsonPropertyName("place name")]
